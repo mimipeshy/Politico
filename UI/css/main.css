@@ -1,147 +1,389 @@
 body {
-    font-family: Arial, Helvetica, 
-    sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: product-sans-regular, serif;
+  font-weight: 200;
+  font-size: 16px;
+  /* line-height: 1.625; */
+  color: #666;
+  
 }
-* {
-    box-sizing: border-box
-}
+.header {
+    margin-top: 0px;
+    margin-left: 10%;
+    overflow: hidden;
+    background-color: #000;
+    display: block;
+    height: 30px;
+    padding: 30px 30px;
+    position:absolute;
+    width: 86%;
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 50%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 50%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-     width: 50%;
+    justify-content: space-between;
+    align-items:center; 
   }
-}body {
-    font-family: Arial, Helvetica, 
-    sans-serif;
+.header a {
+    float: right;
+    color: #eee;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    font-family: product-sans-regular, serif;
+    
 }
-* {
-    box-sizing: border-box
+h1,h2,h3,h4,h5,h6 {
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    line-height: 2;
 }
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 50%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+h1 {
+    font-size: 36px;
 }
 
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+h2 {
+    font-size: 30px;
 }
 
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+h3 {
+    font-size: 24px;
 }
 
-button:hover {
-  opacity:1;
+h4 {
+    font-size: 18px;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
+h5 {
+    font-size: 15px;
 }
 
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+h6 {
+    font-size: 13px;
+}
+.header .logo {
+  color:teal;
   float: left;
-  width: 50%;
+  margin-right: 40px;
 }
 
-/* Add padding to container elements */
-.container {
-  padding: 16px;
+.highlight-2 {
+  color:white;
+  font-weight: 600;
 }
 
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+/*side bar navigation properties*/
+
+.sidebarnav .logo {
+  background-color:teal;
+  color: #fff;
+  border-bottom: 1px solid #bababa;
+  height: 10%;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-     width: 50%;
+.logo i {
+    font-size: 80px;
+}
+.card {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.logo span {
+    margin-left: 2px;
+    text-transform: uppercase;
+    
+}
+
+.sidebarnav{
+    height: 100%;
+    width: 16%;
+    position: fixed;
+    z-index: 1;
+    top: 0; /* Stay at the top */
+    left: 0;    
+    overflow: hidden;
+    background-color: teal;
+    padding-top: 2px;
+    padding-bottom: 40px;
+    
+ }
+
+.sidebarnav.visible {
+  display: block;
+}
+ .sidebarnav ul{
+     margin: 0;
+     padding: 0;
+  
+ }
+.sidebarnav ul li{
+    padding: 16px 16px;
+    border-bottom: 1px solid #bababa;
+    position: relative;
+    margin: 0;
+    list-style: none;
+       
+ }
+.sidebarnav ul li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 12px 12px;
+ 
+}
+.sidebarnav ul li i {
+  color: #bababa;
+  min-width: 20px;
+  text-align: center;
+}
+.sidebarnav ul li :active{
+    background: teal;
+  
+}
+.sidebarnav ul li.active:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #bababa;
+}
+.sidebarnav ul li :hover{
+    background: teal;
+    
+ }
+.sidebarnav a {
+    color: #f2f2f2;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+/*main navigation properties*/
+.main-navbar {
+  margin-top: 0;
+  padding: 44px 40px 40px;
+  height: 100%;
+  overflow: scroll;
+}
+.wrapper-main {
+    width: 100%;
+    margin: 0;
+    overflow: scroll;
+}
+#category-1 {
+  background: #4b4b4b;
+}
+
+#category-2 {
+  background: teal;
+ }
+
+#category-3 {
+  background: #4b4b4b;
+}
+
+#category-4 {
+  background: teal;
+} 
+
+#category-5 {
+  background: #4b4b4b;
+}
+.admin-links div h3 {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  line-height: 50px;
+ 
+}
+.admin-links div p {
+  font-size: 25px;
+  color: #fff;
+  text-align: right;
+  font-weight: 200;
+  margin-right: 15px;
+}
+.admin-links {
+    overflow: hidden;
+}
+
+.admin-links div {
+    margin: 20px 10px 0;
+    height: 160px;
+    display: table;
+    float: left;
+}
+.wrapper {
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 4%;
+    padding: 20px 0 40px;
+    height: 100%;
+}
+.admin-links div h3 {
+    font-size: 40px;
+} 
+.admin-boxlink-square {
+    width: calc(25% - 20px) !important;
+}
+
+.admin-boxlink-rectangle {
+    width: calc(30% - 20px) !important;
+} 
+
+.admin-links div h3 {
+    line-height: 160px;
+}
+/*user main navigation*/
+.register {
+    width: 1000px;
+    margin-top: 0;
+    padding: 0 300px 0;
+    height: 100%;
+       
+}
+.order h4 {
+    line-height: 3;
+    font-weight: 600;
+    color: teal;
+}
+/*forms*/
+.user-form{
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+    transition: .5s ease;
+  
+}
+label {
+    display: block;
+    margin: 5px;
+    margin-left: 0;
+    font-size: 16px;
+}
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display:block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
+  
+  input[type=submit] {
+    width: 25%;
+    background-color: #ccc;
+    color: #272727;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ccc;
+  }
+  input[type=cancel] {
+    width: 20%;
+    background-color: #B22222;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+/*view users table*/
+.tables {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tables td, #users th {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-top: none;
+    border-bottom: 1px solid #c5c5c5;
+    font-size: 14px;
+    padding: 6px 32px;
+    text-align: center;
+}
+
+.tables tr:nth-child(even){background-color: #f2f2f2;}
+
+.tables tr:hover {background-color: #ddd;}
+
+.tables th {
+    background: #333;
+    font-size: 14px;
+    color: #fff;
+    vertical-align: middle;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 16px 16px;
+    white-space: nowrap;
+    text-align: center;
+}
+.pagination a {
+    color: #272727;
+    float: left;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    font-size: 14px;
+}
+
+.pagination a.active {
+    background-color: #009898;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+
+/*footer properties */
+.footer {
+    padding: 20px;
+    background-color: #000;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+   
 }

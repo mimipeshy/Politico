@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -16,19 +16,96 @@
                      <ul>
                          <li><a href="#">Home</a></li>
                          <li><a href="#">Donate Now</a></li>
-                         <li><a href="register.html">Register Here</a></li>
+                        
                         
                      </ul>
                  </nav>
              </header>
-             <div class="box-two">
-                 <img src="/UI/images/ev.jpg"
-                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consequat libero eget magna commodo, quis pharetra tellus pretium. Sed viverra ante in mauris finibus dapibus. Maecenas congue dapibus nulla, eu gravida orci consequat eu. Phasellus nec nunc malesuada, aliquam massa ac, accumsan metus. Fusce sed dignissim lectus. Nunc elit tellus, sollicitudin ac accumsan ut, egestas et dui. Maecenas aliquam est a ligula scelerisque, in aliquam neque sodales. Nullam condimentum euismod dictum. Curabitur non ex elementum, pretium enim ut, ornare ipsum.</p>
-             </div>
-              </body>
-              <div class="footer">
-                <p>Copyright@Politico All Rights Reserved </p>
-              </div>
-                
+        <div class="main-navbar">
+            <h2>YOUR VOTE IS YOUR CHOICE</h2>
+        </div>
+<div class="form">
+      
+                        <ul class="tab-group">
+                          <li class="tab active"><a href="#signup">Sign Up</a></li>
+                          <li class="tab"><a href="login.html">Log In</a></li>
+                        </ul>
+                        
+                        <div class="tab-content">
+                          <div id="signup">   
+                                                       
+                            <form action="/" method="post">
+                            
+                            <div class="top-row">
+                              <div class="field-wrap">
+                                <label>
+                                  First Name
+                                </label>
+                                <input type="text" id="fname"  placeholder="jane">
+                              </div>
+                          
+                              <div class="field-wrap">
+                                <label>
+                                  Last Name
+                                </label>
+                                <input type="text" id="lname"  placeholder="doe">
+                              </div>
+                            </div>
+                  
+                            <div class="field-wrap">
+                              <label>
+                                Email Address
+                              </label>
+                              <input type="email" id="lname"  placeholder="janedoe@example.com">
+                            </div>
+                            
+                            <div class="field-wrap">
+                              <label>
+                                Set A Password
+                              </label>
+                              <input type="password" id="password"/>
+                            </div>
+                            
+                            <button type="submit" class="button button-block" /><a href="login.html">Get Started</a></button>
+                            
+                            </form>
+                  
+                          </div>
+                          
+<div id="login">   
+                            
+                            <form action="/" method="post">
+                            
+                             <div class="field-wrap">
+                              <label>
+                                Email Address<span class="req">*</span>
+                              </label>
+                              <input type="email"required autocomplete="off"/>
+                             </div>
+                            
+                            <div class="field-wrap">
+                              <label>
+                                Password<span class="req">*</span>
+                              </label>
+                              <input type="password"required autocomplete="off"/>
+                            </div>
+                            
+                            <p class="forgot"><a href="/UI/reset.html">Forgot Password?</a></p>
+                            
+                            <button class="button button-block"/>Log In</button>
+                            
+                            </form>
+                  
+                          </div>
+                          
+                        </div><!-- tab-content -->
+                        
+                  </div>
+                      </body>
+                      <div class="footer">
+                        <p>Politico, Copyright &copy; 2019 </p>
+                      </div>
+                        
+                        
 
 </html>
